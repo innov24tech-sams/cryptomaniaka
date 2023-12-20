@@ -1,0 +1,23 @@
+name: crypto
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - crypto/base
+  - crypto/sams
+  - crypto/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - crypto/user
+  core/drupal.dropbutton:
+    - crypto/dropbutton
+  core/drupal.dialog:
+    - crypto/dialog
+  file/drupal.file:
+    - crypto/file
+  core/drupal.progress:
+    - crypto/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.7'
